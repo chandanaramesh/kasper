@@ -22,23 +22,45 @@
 
 # CELL ********************
 
-import os, requests, textwrap
-# -- config (parameterised) --
-raw_url = "https://github.com/chandanaramesh/kasper/blob/main/2019.csv"
-target_path = "/lakehouse/default/Files/config/etl_metadata.csv"
+# ── 1. Imports ──────────────────────────────────────────────
+import requests
+from notebookutils import mssparkutils
 
-# -- skip if already present (idempotent) --
-if not os.path.exists(target_path):
-    token = dbutils.secrets.get("fabric-kv", "git-pat")        # optional
-    headers = {"Authorization": f"token {token}"} if token else {}
-    r = requests.get(raw_url, headers=headers, timeout=30)
-    r.raise_for_status()
-    os.makedirs(os.path.dirname(target_path), exist_ok=True)
-    with open(target_path, "wb") as f:
-        f.write(r.content)
-    print("File downloaded ✔")
+# ── 2. CONFIG ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑
+RAW_URL = (
+    # ⚠️  IMPORTANT: use the *raw* URL pattern, not the normal GitHub page URL
+    # https://raw.githubusercontent.com/<owner>/<repo>/<branch>/path/to/file.csv
+    "https://raw.githubusercontent.com/chandanaramesh/kasper/main/2019.csv"
+)
+
+# If your repo is PRIVATE, paste the classic PAT below; if it’s PUBLIC, leave it blank
+GITHUB_PAT = ""                      # e.g. "ghp_k4sper1234567890abcDEF"
+HEADERS = {"Authorization": f"token {GITHUB_PAT}"} if GITHUB_PAT else {}
+
+# Lakehouse destination
+DEST_PATH   = "Files/config/etl_metadata.csv"   # no leading slash
+TEMP_FILE   = "/tmp/etl_metadata.csv"           # local scratch file
+
+# ── 3. Download (only if not already in Lakehouse) ─────────
+if not mssparkutils.fs.exists(DEST_PATH):
+    # 3‑A  fetch bytes from GitHub
+    resp = requests.get(RAW_URL, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+
+    # 3‑B  save to local /tmp
+    with open(TEMP_FILE, "wb") as f:
+        f.write(resp.content)
+
+    # 3‑C  ensure Lakehouse folder exists once
+    mssparkutils.fs.mkdirs("Files/config")
+
+    # 3‑D  copy local → Lakehouse
+    mssparkutils.fs.cp(f"file:{TEMP_FILE}", DEST_PATH)
+
+    print("CSV copied to Lakehouse ✔")
 else:
-    print("File already present, skipping.")
+    print("CSV already present – skipping download")
+
 
 
 # METADATA ********************
