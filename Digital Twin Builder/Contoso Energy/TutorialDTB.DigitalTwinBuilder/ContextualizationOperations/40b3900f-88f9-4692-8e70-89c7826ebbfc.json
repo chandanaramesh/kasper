@@ -1,0 +1,16 @@
+{
+  "OperationId": "40b3900f-88f9-4692-8e70-89c7826ebbfc",
+  "DisplayName": "Reboiler_isPartOf_Process_Contextualization",
+  "OperationType": "Contextualization",
+  "EntityTypeRelationshipId": "3798112968763347968",
+  "JoinColumns": {
+    "FirstColumn": {
+      "EntityId": "131439746891751",
+      "AttributeName": "SiteId"
+    },
+    "SecondColumn": {
+      "EntityId": "67073129628450",
+      "AttributeName": "siteId"
+    }
+  }
+}

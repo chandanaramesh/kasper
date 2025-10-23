@@ -1,0 +1,15 @@
+[
+  {
+    "name": "dimension_customer",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/dbo/dimension_customer",
+        "itemId": "6c38c8fb-2052-b927-45b0-fc17ec90a5f5",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Warehouse"
+      }
+    }
+  }
+]

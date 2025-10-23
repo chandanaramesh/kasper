@@ -1,0 +1,42 @@
+{
+  "operationId": "562b81e9-5ee2-4610-8d50-72640f867614",
+  "displayName": "Reboiler_assetdata",
+  "operationType": "Mapping",
+  "entityTypeId": "131439746891751",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "Name",
+        "EntityTypePropertyName": "DisplayName"
+      },
+      {
+        "SourceColumn": "ID",
+        "EntityTypePropertyName": "ReboilerId"
+      },
+      {
+        "SourceColumn": "SiteId",
+        "EntityTypePropertyName": "SiteId"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "ID"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "assetdata",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "Name",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "reboiler",
+    "ValueType": "String"
+  }
+}

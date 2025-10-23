@@ -1,0 +1,36 @@
+{
+  "operationId": "364ba44a-32e6-45d0-9062-bf1b0383e6be",
+  "displayName": "Technician_technicians",
+  "operationType": "Mapping",
+  "entityTypeId": "7644682122862",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "name",
+        "EntityTypePropertyName": "DisplayName"
+      },
+      {
+        "SourceColumn": "email",
+        "EntityTypePropertyName": "Email"
+      },
+      {
+        "SourceColumn": "Id",
+        "EntityTypePropertyName": "TechnicianId"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "Id"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "technicians",
+    "SourceSchema": null
+  },
+  "filters": null
+}

@@ -1,0 +1,28 @@
+{
+  "Id": "7644682122862",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "1",
+  "Name": "Technician",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "501001887603884032",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "501001887603884033",
+      "Name": "Email",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "501001887603884034",
+      "Name": "TechnicianId",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": []
+}

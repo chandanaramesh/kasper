@@ -1,0 +1,65 @@
+{
+  "Id": "131439746891751",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "2",
+  "Name": "Reboiler",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "8614035252297793536",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793537",
+      "Name": "SerialNumber",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793538",
+      "Name": "Manufacturer",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793539",
+      "Name": "ReboilerId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793540",
+      "Name": "SiteId",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": [
+    {
+      "Id": "8614035252297793536",
+      "Name": "Timestamp",
+      "ValueType": "DateTime",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793537",
+      "Name": "Pressure",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793538",
+      "Name": "InletTemperature",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "8614035252297793539",
+      "Name": "OutletTemperature",
+      "ValueType": "Double",
+      "IsLocked": false
+    }
+  ]
+}

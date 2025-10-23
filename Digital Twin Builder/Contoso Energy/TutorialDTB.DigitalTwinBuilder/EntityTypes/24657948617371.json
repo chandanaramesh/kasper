@@ -1,0 +1,77 @@
+{
+  "Id": "24657948617371",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "2",
+  "Name": "Distiller",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "1615983320588025856",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025857",
+      "Name": "SerialNumber",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025858",
+      "Name": "Manufacturer",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025859",
+      "Name": "DistillerId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025860",
+      "Name": "SiteId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025861",
+      "Name": "NumberOfTrays",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": [
+    {
+      "Id": "1615983320588025856",
+      "Name": "Timestamp",
+      "ValueType": "DateTime",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025857",
+      "Name": "RefluxRatio",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025858",
+      "Name": "MainTowerPressure",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025859",
+      "Name": "FeedFlowRate",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "1615983320588025860",
+      "Name": "FeedTrayTemperature",
+      "ValueType": "Double",
+      "IsLocked": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "OperationId": "c54e7207-f55a-40bd-a68e-fd98a56fa3ba",
+  "DisplayName": "Condenser_isPartOf_Process_Contextualization",
+  "OperationType": "Contextualization",
+  "EntityTypeRelationshipId": "3142947145997876224",
+  "JoinColumns": {
+    "FirstColumn": {
+      "EntityId": "91886372668327",
+      "AttributeName": "SiteId"
+    },
+    "SecondColumn": {
+      "EntityId": "67073129628450",
+      "AttributeName": "siteId"
+    }
+  }
+}

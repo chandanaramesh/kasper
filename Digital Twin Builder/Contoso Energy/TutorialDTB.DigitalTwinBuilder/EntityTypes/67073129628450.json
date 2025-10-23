@@ -1,0 +1,40 @@
+{
+  "Id": "67073129628450",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "6",
+  "Name": "Process",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "4395704623330099200",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "4395704623330099201",
+      "Name": "Type",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "4395704623330099202",
+      "Name": "siteName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "4395704623330099203",
+      "Name": "processId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "4395704623330099204",
+      "Name": "siteId",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": []
+}

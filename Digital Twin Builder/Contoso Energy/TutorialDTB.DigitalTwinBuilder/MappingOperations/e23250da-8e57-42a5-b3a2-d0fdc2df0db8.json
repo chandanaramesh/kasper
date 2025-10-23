@@ -1,0 +1,51 @@
+{
+  "operationId": "e23250da-8e57-42a5-b3a2-d0fdc2df0db8",
+  "displayName": "Distiller_timeseries_TimeSeries",
+  "operationType": "Mapping",
+  "entityTypeId": "24657948617371",
+  "mappingOperationProperties": {
+    "MappingType": "TimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "sourceTimestamp",
+        "EntityTypePropertyName": "Timestamp"
+      },
+      {
+        "SourceColumn": "RefluxRatio",
+        "EntityTypePropertyName": "RefluxRatio"
+      },
+      {
+        "SourceColumn": "MainTowerPressure",
+        "EntityTypePropertyName": "MainTowerPressure"
+      },
+      {
+        "SourceColumn": "FeedFlowRate",
+        "EntityTypePropertyName": "FeedFlowRate"
+      },
+      {
+        "SourceColumn": "FeedTrayTemperature",
+        "EntityTypePropertyName": "FeedTrayTemperature"
+      }
+    ],
+    "ProcessingType": "Incremental",
+    "EntityInstanceIdSchema": [],
+    "TimeseriesEntityLinkProperties": {
+      "EntityProperty": "DistillerId",
+      "TimeseriesProperty": "assetId"
+    }
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "timeseries",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "assetId",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "D",
+    "ValueType": "String"
+  }
+}

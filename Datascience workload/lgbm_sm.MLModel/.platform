@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLModel",
+    "displayName": "lgbm_sm"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1c8629a1-422a-aa41-43d3-b66f852f8a29"
+  }
+}

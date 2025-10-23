@@ -1,0 +1,46 @@
+{
+  "Id": "127149293388097",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "1",
+  "Name": "MaintenanceRequest",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "8332856091482324992",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8332856091482324993",
+      "Name": "EquipmentId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8332856091482324994",
+      "Name": "SiteId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8332856091482324995",
+      "Name": "Status",
+      "ValueType": "BigInt",
+      "IsLocked": false
+    },
+    {
+      "Id": "8332856091482324996",
+      "Name": "TechnicianId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "8332856091482324997",
+      "Name": "WorkorderId",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": []
+}

@@ -1,0 +1,77 @@
+{
+  "Id": "91886372668327",
+  "Namespace": "usertypes",
+  "BaseEntityTypeId": "2",
+  "Name": "Condenser",
+  "IsLocked": false,
+  "Properties": [
+    {
+      "Id": "6021865319191478272",
+      "Name": "DisplayName",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478273",
+      "Name": "SerialNumber",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478274",
+      "Name": "Manufacturer",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478275",
+      "Name": "CondenserId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478276",
+      "Name": "SiteId",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478277",
+      "Name": "CoolingMedium",
+      "ValueType": "String",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478278",
+      "Name": "InstallationDate",
+      "ValueType": "String",
+      "IsLocked": false
+    }
+  ],
+  "TimeseriesProperties": [
+    {
+      "Id": "6021865319191478272",
+      "Name": "Timestamp",
+      "ValueType": "DateTime",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478273",
+      "Name": "Pressure",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478274",
+      "Name": "Power",
+      "ValueType": "Double",
+      "IsLocked": false
+    },
+    {
+      "Id": "6021865319191478275",
+      "Name": "Temperature",
+      "ValueType": "Double",
+      "IsLocked": false
+    }
+  ]
+}

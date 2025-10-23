@@ -1,0 +1,16 @@
+{
+  "OperationId": "acfe8124-09fe-4fe1-bb02-1fabc759045e",
+  "DisplayName": "Distiller_has_MaintenanceRequest_Contextualization",
+  "OperationType": "Contextualization",
+  "EntityTypeRelationshipId": "5766301802106051584",
+  "JoinColumns": {
+    "FirstColumn": {
+      "EntityId": "24657948617371",
+      "AttributeName": "DistillerId"
+    },
+    "SecondColumn": {
+      "EntityId": "127149293388097",
+      "AttributeName": "EquipmentId"
+    }
+  }
+}

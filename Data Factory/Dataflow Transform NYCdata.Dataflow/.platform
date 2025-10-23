@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Dataflow Transform NYCdata"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a951beef-472f-a52c-48b2-876816962672"
+  }
+}

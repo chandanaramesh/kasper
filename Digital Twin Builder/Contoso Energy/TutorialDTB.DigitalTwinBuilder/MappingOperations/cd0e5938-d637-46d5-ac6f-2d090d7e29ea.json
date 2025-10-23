@@ -1,0 +1,47 @@
+{
+  "operationId": "cd0e5938-d637-46d5-ac6f-2d090d7e29ea",
+  "displayName": "Condenser_timeseries_TimeSeries",
+  "operationType": "Mapping",
+  "entityTypeId": "91886372668327",
+  "mappingOperationProperties": {
+    "MappingType": "TimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "sourceTimestamp",
+        "EntityTypePropertyName": "Timestamp"
+      },
+      {
+        "SourceColumn": "Pressure",
+        "EntityTypePropertyName": "Pressure"
+      },
+      {
+        "SourceColumn": "Power",
+        "EntityTypePropertyName": "Power"
+      },
+      {
+        "SourceColumn": "InletTemperature",
+        "EntityTypePropertyName": "Temperature"
+      }
+    ],
+    "ProcessingType": "Incremental",
+    "EntityInstanceIdSchema": [],
+    "TimeseriesEntityLinkProperties": {
+      "EntityProperty": "CondenserId",
+      "TimeseriesProperty": "assetId"
+    }
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "timeseries",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "assetId",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "C",
+    "ValueType": "String"
+  }
+}

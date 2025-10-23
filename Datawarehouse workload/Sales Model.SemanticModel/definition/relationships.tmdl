@@ -1,0 +1,5 @@
+relationship f1d2e731-040f-f271-152c-70e95e117b56
+	relyOnReferentialIntegrity
+	fromColumn: fact_sale.CityKey
+	toColumn: dimension_city.CityKey
+

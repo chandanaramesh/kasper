@@ -1,0 +1,50 @@
+{
+  "operationId": "d4fecebf-676b-4c79-876b-f0b42b6825f8",
+  "displayName": "Condenser_assetdata",
+  "operationType": "Mapping",
+  "entityTypeId": "91886372668327",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "Name",
+        "EntityTypePropertyName": "DisplayName"
+      },
+      {
+        "SourceColumn": "ID",
+        "EntityTypePropertyName": "CondenserId"
+      },
+      {
+        "SourceColumn": "SiteId",
+        "EntityTypePropertyName": "SiteId"
+      },
+      {
+        "SourceColumn": "CoolingMedium",
+        "EntityTypePropertyName": "CoolingMedium"
+      },
+      {
+        "SourceColumn": "InstallationDate",
+        "EntityTypePropertyName": "InstallationDate"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "ID"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "assetdata",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "Name",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "condenser",
+    "ValueType": "String"
+  }
+}

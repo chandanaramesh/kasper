@@ -1,0 +1,36 @@
+{
+  "operationId": "80ec95aa-c60a-49ae-b98f-f5b0c27151ba",
+  "displayName": "Process_processdata",
+  "operationType": "Mapping",
+  "entityTypeId": "67073129628450",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "siteName",
+        "EntityTypePropertyName": "siteName"
+      },
+      {
+        "SourceColumn": "processId",
+        "EntityTypePropertyName": "processId"
+      },
+      {
+        "SourceColumn": "siteId",
+        "EntityTypePropertyName": "siteId"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "processId"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "processdata",
+    "SourceSchema": null
+  },
+  "filters": null
+}

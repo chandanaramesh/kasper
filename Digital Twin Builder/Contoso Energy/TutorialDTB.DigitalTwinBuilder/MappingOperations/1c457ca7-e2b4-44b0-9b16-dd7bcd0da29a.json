@@ -1,0 +1,44 @@
+{
+  "operationId": "1c457ca7-e2b4-44b0-9b16-dd7bcd0da29a",
+  "displayName": "MaintenanceRequest_maintenancerequests",
+  "operationType": "Mapping",
+  "entityTypeId": "127149293388097",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "EquipmentId",
+        "EntityTypePropertyName": "EquipmentId"
+      },
+      {
+        "SourceColumn": "Site",
+        "EntityTypePropertyName": "SiteId"
+      },
+      {
+        "SourceColumn": "Status",
+        "EntityTypePropertyName": "Status"
+      },
+      {
+        "SourceColumn": "TechnicianId",
+        "EntityTypePropertyName": "TechnicianId"
+      },
+      {
+        "SourceColumn": "WorkorderId",
+        "EntityTypePropertyName": "WorkorderId"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "WorkorderId"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "maintenancerequests",
+    "SourceSchema": null
+  },
+  "filters": null
+}

@@ -1,0 +1,16 @@
+{
+  "OperationId": "22bd1411-896f-4f92-9efd-5cd64b874cce",
+  "DisplayName": "Distiller_isPartOf_Process_Contextualization",
+  "OperationType": "Contextualization",
+  "EntityTypeRelationshipId": "1373652888604325888",
+  "JoinColumns": {
+    "FirstColumn": {
+      "EntityId": "24657948617371",
+      "AttributeName": "SiteId"
+    },
+    "SecondColumn": {
+      "EntityId": "67073129628450",
+      "AttributeName": "siteId"
+    }
+  }
+}

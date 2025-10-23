@@ -1,0 +1,16 @@
+{
+  "OperationId": "5aab698a-01cb-49ac-ae03-a3b53963e14a",
+  "DisplayName": "Technician_performs_MaintenanceRequest_Contextualization",
+  "OperationType": "Contextualization",
+  "EntityTypeRelationshipId": "3942501887862507520",
+  "JoinColumns": {
+    "FirstColumn": {
+      "EntityId": "7644682122862",
+      "AttributeName": "TechnicianId"
+    },
+    "SecondColumn": {
+      "EntityId": "127149293388097",
+      "AttributeName": "TechnicianId"
+    }
+  }
+}

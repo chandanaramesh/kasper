@@ -1,0 +1,46 @@
+{
+  "operationId": "f7562f28-a337-4b00-84e7-35ad15b2b012",
+  "displayName": "Distiller_assetdata",
+  "operationType": "Mapping",
+  "entityTypeId": "24657948617371",
+  "mappingOperationProperties": {
+    "MappingType": "NonTimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "Name",
+        "EntityTypePropertyName": "DisplayName"
+      },
+      {
+        "SourceColumn": "ID",
+        "EntityTypePropertyName": "DistillerId"
+      },
+      {
+        "SourceColumn": "SiteId",
+        "EntityTypePropertyName": "SiteId"
+      },
+      {
+        "SourceColumn": "NumberOfTrays",
+        "EntityTypePropertyName": "NumberOfTrays"
+      }
+    ],
+    "ProcessingType": "Iterative",
+    "EntityInstanceIdSchema": [
+      "ID"
+    ],
+    "TimeseriesEntityLinkProperties": null
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "assetdata",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "Name",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "distiller",
+    "ValueType": "String"
+  }
+}

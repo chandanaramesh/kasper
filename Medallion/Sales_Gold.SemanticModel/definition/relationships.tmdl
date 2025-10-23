@@ -1,0 +1,10 @@
+relationship bb8ab59f-9878-299e-13af-e44dba54231f
+	relyOnReferentialIntegrity
+	fromColumn: factsales_gold.CustomerID
+	toColumn: dimcustomer_gold.CustomerID
+
+relationship b055b3a9-8ad3-2b4a-43bb-b55ba58821d7
+	relyOnReferentialIntegrity
+	fromColumn: factsales_gold.ItemID
+	toColumn: dimproduct_gold.ItemID
+

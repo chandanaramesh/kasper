@@ -1,0 +1,47 @@
+{
+  "operationId": "532fdbac-241f-42dc-8b72-0ed49d4b4cbc",
+  "displayName": "Reboiler_timeseries_TimeSeries",
+  "operationType": "Mapping",
+  "entityTypeId": "131439746891751",
+  "mappingOperationProperties": {
+    "MappingType": "TimeSeries",
+    "MappedProperties": [
+      {
+        "SourceColumn": "sourceTimestamp",
+        "EntityTypePropertyName": "Timestamp"
+      },
+      {
+        "SourceColumn": "Pressure",
+        "EntityTypePropertyName": "Pressure"
+      },
+      {
+        "SourceColumn": "InletTemperature",
+        "EntityTypePropertyName": "InletTemperature"
+      },
+      {
+        "SourceColumn": "OutletTemperature",
+        "EntityTypePropertyName": "OutletTemperature"
+      }
+    ],
+    "ProcessingType": "Incremental",
+    "EntityInstanceIdSchema": [],
+    "TimeseriesEntityLinkProperties": {
+      "EntityProperty": "ReboilerId",
+      "TimeseriesProperty": "assetId"
+    }
+  },
+  "sourceTableProperties": {
+    "SourceType": "LakehouseTables",
+    "WorkspaceId": "00000000-0000-0000-0000-000000000000",
+    "ItemId": "d8bedd58-8d35-a756-4b17-c075b01adf79",
+    "SourceTableName": "timeseries",
+    "SourceSchema": null
+  },
+  "filters": {
+    "type": "comparison",
+    "SourceColumn": "assetId",
+    "ComparisonOperatorKind": "Contains",
+    "Value": "R",
+    "ValueType": "String"
+  }
+}

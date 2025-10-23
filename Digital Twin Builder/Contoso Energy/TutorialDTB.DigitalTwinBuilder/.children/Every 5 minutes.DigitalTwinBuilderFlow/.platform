@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DigitalTwinBuilderFlow",
+    "displayName": "Every 5 minutes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7db5a9b0-69e8-8756-4c4f-c739fe5c9fc6"
+  }
+}
